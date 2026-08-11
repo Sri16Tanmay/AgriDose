@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --bg-obsidian: #080C0E;
+  --panel-card: #10171D;
+  --border-slate: #1E293B;
+  --accent-emerald: #00FF88;
+  --accent-cyan: #00E5FF;
+  --alert-red: #FF3B30;
+  --text-ice: #E2E8F0;
+  --text-slate: #94A3B8;
+}
+
+body {
+  background-color: #080C0E;
+  color: #E2E8F0;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .bg-obsidian {
+    background-color: #080C0E;
+  }
+
+  .bg-panel-card {
+    background-color: #10171D;
+  }
+
+  .border-panel-slate {
+    border-color: #1E293B;
+  }
+
+  .glass-card {
+    background: rgba(16, 23, 29, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid #1E293B;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.65);
+  }
+
+  .glass-card-accent {
+    background: rgba(16, 23, 29, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 255, 136, 0.35);
+    box-shadow: 0 10px 40px -10px rgba(0, 255, 136, 0.25);
+  }
+
+  .glass-card-cyan {
+    background: rgba(16, 23, 29, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 229, 255, 0.35);
+    box-shadow: 0 10px 40px -10px rgba(0, 229, 255, 0.2);
+  }
+
+  .glass-card-red {
+    background: rgba(25, 12, 14, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 59, 48, 0.4);
+    box-shadow: 0 10px 40px -10px rgba(255, 59, 48, 0.3);
+  }
+
+  .glass-panel {
+    background: rgba(16, 23, 29, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid #1E293B;
+  }
+
+  .glow-emerald {
+    box-shadow: 0 0 25px -5px rgba(0, 255, 136, 0.35);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 25px -5px rgba(0, 229, 255, 0.35);
+  }
+
+  .glow-emerald-active {
+    border: 1.5px solid #00FF88;
+    box-shadow: 0 0 16px rgba(0, 255, 136, 0.3);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
+

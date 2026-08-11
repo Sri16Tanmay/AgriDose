@@ -1,0 +1,6 @@
+{
+  "name": "AgriDose",
+  "description": "Precision plant infection severity assessment and proportional pesticide dosage control with offline field sync, bilingual AI assistant Rewa, and outdoor high-contrast mode.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
